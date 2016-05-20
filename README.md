@@ -1,8 +1,8 @@
 # Unicode v3.0.0 data
 
-JavaScript-compatible Unicode data for use in Node.js. Included: arrays of code points, arrays of symbols, and regular expressions for Unicode v3.0.0’s categories, scripts, blocks, and properties, as well as bidi mirroring and case folding data.
+JavaScript-compatible Unicode data for use in Node.js. Included: arrays of code points, arrays of symbols, and regular expressions for Unicode v3.0.0’s categories, scripts, script extensions, blocks, and properties, as well as bidi mirroring and case folding data.
 
-The data files in this module are generated as part of the [node-unicode-data](https://mths.be/node-unicode-data) project. Please report any bugs or requests [in the appropriate issue tracker](https://github.com/mathiasbynens/node-unicode-data/issues).
+The data files in this module are generated as part of the [node-unicode-data](https://mths.be/node-unicode-data) project. **Please report any bugs or requests [in the appropriate issue tracker](https://github.com/mathiasbynens/node-unicode-data/issues).**
 
 ## Installation
 
@@ -14,39 +14,39 @@ npm install unicode-3.0.0 --save-dev
 
 ## Regular expressions
 
-The Unicode data modules ship with pre-compiled regular expressions for categories, scripts, blocks, and properties. But maybe you want to create a single regular expression that combines several categories, scripts, etc. In that case, [***you should use Regenerate***](https://mths.be/regenerate). For example, to construct a regex that matches all symbols in the Arabic and Greek scripts as per Unicode v6.3.0:
+The Unicode data modules ship with pre-compiled regular expressions for categories, scripts, script extensions, blocks, and properties. But maybe you want to create a single regular expression that combines several categories, scripts, etc. In that case, [***you should use Regenerate***](https://mths.be/regenerate). For example, to construct a regex that matches all symbols in the Arabic and Greek scripts as per Unicode v6.3.0:
 
 ```js
-var regenerate = require('regenerate');
-var set = regenerate()
+const regenerate = require('regenerate');
+const set = regenerate()
   .add(require('unicode-6.3.0/scripts/Arabic/code-points')) // or `…/symbols`, doesn’t matter
   .add(require('unicode-6.3.0/scripts/Greek/code-points')); // or `…/symbols`, doesn’t matter
 console.log(set.toString());
 // Then you might want to use a template like this to write the result to a file, along with any regex flags you might need:
-// var regex = /<%= set.toString() %>/gim;
+// const regex = /<%= set.toString() %>/gim;
 ```
 
 ## Usage
 
 ```js
 // Get an array of code points in a given Unicode category:
-var codePoints = require('unicode-3.0.0/categories/Lu/code-points');
+const codePoints = require('unicode-3.0.0/categories/Lu/code-points');
 // Get an array of symbols (strings) in a given Unicode category:
-var symbols = require('unicode-3.0.0/categories/Lu/symbols');
+const symbols = require('unicode-3.0.0/categories/Lu/symbols');
 // Get a regular expression that matches any symbol in a given Unicode category:
-var regex = require('unicode-3.0.0/categories/Lu/regex');
+const regex = require('unicode-3.0.0/categories/Lu/regex');
 // Get the canonical category a given code point belongs to:
 // (Note: U+0041 is LATIN CAPITAL LETTER A)
-var category = require('unicode-3.0.0/categories')[ 0x41 ];
+const category = require('unicode-3.0.0/categories')[ 0x41 ];
 // Get an array of all code points with the `Bidi_ON` bidi property:
-var on = require('unicode-3.0.0/bidi/ON/code-points');
+const on = require('unicode-3.0.0/bidi/ON/code-points');
 // Get the directionality of a given code point:
-var directionality = require('unicode-3.0.0/bidi')[ 0x41 ];
+const directionality = require('unicode-3.0.0/bidi')[ 0x41 ];
 
 // …you get the idea.
 ```
 
-Other than categories, data on Unicode properties, blocks, and scripts is available too (for recent versions of the Unicode standard). Here’s the full list of the available data for v3.0.0:
+Other than categories, data on Unicode properties, blocks, scripts, and script extensions is available too (for recent versions of the Unicode standard). Here’s the full list of the available data for v3.0.0:
 
 ```js
 // properties:
