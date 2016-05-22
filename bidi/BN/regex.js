@@ -1,1 +1,0 @@
-module.exports=/[\0-\x08\x0E-\x1B\x7F-\x84\x86-\x9F\u070F\u180B-\u180E\u200B-\u200D\u206A-\u206F\uFEFF\uFFF9-\uFFFB]/
