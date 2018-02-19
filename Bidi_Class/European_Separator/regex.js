@@ -1,1 +1,1 @@
-module.exports=/[/\uFF0F]/
+module.exports=/[\/\uFF0F]/
