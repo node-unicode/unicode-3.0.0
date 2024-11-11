@@ -1,0 +1,1 @@
+module.exports=new Map([['I','I'],['i','\u0130']])
