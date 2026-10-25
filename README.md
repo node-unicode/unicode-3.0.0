@@ -95,6 +95,10 @@ import CompositeCodePoints from '@unicode/unicode-3.0.0/Binary_Property/Composit
 import CompositeSymbols from '@unicode/unicode-3.0.0/Binary_Property/Composite/symbols.mjs';
 import CompositeRegex from '@unicode/unicode-3.0.0/Binary_Property/Composite/regex.mjs';
 
+import Composition_ExclusionCodePoints from '@unicode/unicode-3.0.0/Binary_Property/Composition_Exclusion/code-points.mjs';
+import Composition_ExclusionSymbols from '@unicode/unicode-3.0.0/Binary_Property/Composition_Exclusion/symbols.mjs';
+import Composition_ExclusionRegex from '@unicode/unicode-3.0.0/Binary_Property/Composition_Exclusion/regex.mjs';
+
 import Currency_SymbolCodePoints from '@unicode/unicode-3.0.0/Binary_Property/Currency_Symbol/code-points.mjs';
 import Currency_SymbolSymbols from '@unicode/unicode-3.0.0/Binary_Property/Currency_Symbol/symbols.mjs';
 import Currency_SymbolRegex from '@unicode/unicode-3.0.0/Binary_Property/Currency_Symbol/regex.mjs';
@@ -227,9 +231,9 @@ import UppercaseCodePoints from '@unicode/unicode-3.0.0/Binary_Property/Uppercas
 import UppercaseSymbols from '@unicode/unicode-3.0.0/Binary_Property/Uppercase/symbols.mjs';
 import UppercaseRegex from '@unicode/unicode-3.0.0/Binary_Property/Uppercase/regex.mjs';
 
-import White_spaceCodePoints from '@unicode/unicode-3.0.0/Binary_Property/White_space/code-points.mjs';
-import White_spaceSymbols from '@unicode/unicode-3.0.0/Binary_Property/White_space/symbols.mjs';
-import White_spaceRegex from '@unicode/unicode-3.0.0/Binary_Property/White_space/regex.mjs';
+import White_SpaceCodePoints from '@unicode/unicode-3.0.0/Binary_Property/White_Space/code-points.mjs';
+import White_SpaceSymbols from '@unicode/unicode-3.0.0/Binary_Property/White_Space/symbols.mjs';
+import White_SpaceRegex from '@unicode/unicode-3.0.0/Binary_Property/White_Space/regex.mjs';
 
 import Zero_widthCodePoints from '@unicode/unicode-3.0.0/Binary_Property/Zero-width/code-points.mjs';
 import Zero_widthSymbols from '@unicode/unicode-3.0.0/Binary_Property/Zero-width/symbols.mjs';
@@ -741,6 +745,10 @@ import MyanmarCodePoints from '@unicode/unicode-3.0.0/Block/Myanmar/code-points.
 import MyanmarSymbols from '@unicode/unicode-3.0.0/Block/Myanmar/symbols.mjs';
 import MyanmarRegex from '@unicode/unicode-3.0.0/Block/Myanmar/regex.mjs';
 
+import No_BlockCodePoints from '@unicode/unicode-3.0.0/Block/No_Block/code-points.mjs';
+import No_BlockSymbols from '@unicode/unicode-3.0.0/Block/No_Block/symbols.mjs';
+import No_BlockRegex from '@unicode/unicode-3.0.0/Block/No_Block/regex.mjs';
+
 import Number_FormsCodePoints from '@unicode/unicode-3.0.0/Block/Number_Forms/code-points.mjs';
 import Number_FormsSymbols from '@unicode/unicode-3.0.0/Block/Number_Forms/symbols.mjs';
 import Number_FormsRegex from '@unicode/unicode-3.0.0/Block/Number_Forms/regex.mjs';
@@ -820,6 +828,146 @@ import Yi_RadicalsRegex from '@unicode/unicode-3.0.0/Block/Yi_Radicals/regex.mjs
 import Yi_SyllablesCodePoints from '@unicode/unicode-3.0.0/Block/Yi_Syllables/code-points.mjs';
 import Yi_SyllablesSymbols from '@unicode/unicode-3.0.0/Block/Yi_Syllables/symbols.mjs';
 import Yi_SyllablesRegex from '@unicode/unicode-3.0.0/Block/Yi_Syllables/regex.mjs';
+
+// `Line_Break`:
+
+import AlphabeticCodePoints from '@unicode/unicode-3.0.0/Line_Break/Alphabetic/code-points.mjs';
+import AlphabeticSymbols from '@unicode/unicode-3.0.0/Line_Break/Alphabetic/symbols.mjs';
+import AlphabeticRegex from '@unicode/unicode-3.0.0/Line_Break/Alphabetic/regex.mjs';
+
+import AmbiguousCodePoints from '@unicode/unicode-3.0.0/Line_Break/Ambiguous/code-points.mjs';
+import AmbiguousSymbols from '@unicode/unicode-3.0.0/Line_Break/Ambiguous/symbols.mjs';
+import AmbiguousRegex from '@unicode/unicode-3.0.0/Line_Break/Ambiguous/regex.mjs';
+
+import Break_AfterCodePoints from '@unicode/unicode-3.0.0/Line_Break/Break_After/code-points.mjs';
+import Break_AfterSymbols from '@unicode/unicode-3.0.0/Line_Break/Break_After/symbols.mjs';
+import Break_AfterRegex from '@unicode/unicode-3.0.0/Line_Break/Break_After/regex.mjs';
+
+import Break_BeforeCodePoints from '@unicode/unicode-3.0.0/Line_Break/Break_Before/code-points.mjs';
+import Break_BeforeSymbols from '@unicode/unicode-3.0.0/Line_Break/Break_Before/symbols.mjs';
+import Break_BeforeRegex from '@unicode/unicode-3.0.0/Line_Break/Break_Before/regex.mjs';
+
+import Break_BothCodePoints from '@unicode/unicode-3.0.0/Line_Break/Break_Both/code-points.mjs';
+import Break_BothSymbols from '@unicode/unicode-3.0.0/Line_Break/Break_Both/symbols.mjs';
+import Break_BothRegex from '@unicode/unicode-3.0.0/Line_Break/Break_Both/regex.mjs';
+
+import Break_SymbolsCodePoints from '@unicode/unicode-3.0.0/Line_Break/Break_Symbols/code-points.mjs';
+import Break_SymbolsSymbols from '@unicode/unicode-3.0.0/Line_Break/Break_Symbols/symbols.mjs';
+import Break_SymbolsRegex from '@unicode/unicode-3.0.0/Line_Break/Break_Symbols/regex.mjs';
+
+import Carriage_ReturnCodePoints from '@unicode/unicode-3.0.0/Line_Break/Carriage_Return/code-points.mjs';
+import Carriage_ReturnSymbols from '@unicode/unicode-3.0.0/Line_Break/Carriage_Return/symbols.mjs';
+import Carriage_ReturnRegex from '@unicode/unicode-3.0.0/Line_Break/Carriage_Return/regex.mjs';
+
+import Close_PunctuationCodePoints from '@unicode/unicode-3.0.0/Line_Break/Close_Punctuation/code-points.mjs';
+import Close_PunctuationSymbols from '@unicode/unicode-3.0.0/Line_Break/Close_Punctuation/symbols.mjs';
+import Close_PunctuationRegex from '@unicode/unicode-3.0.0/Line_Break/Close_Punctuation/regex.mjs';
+
+import Combining_MarkCodePoints from '@unicode/unicode-3.0.0/Line_Break/Combining_Mark/code-points.mjs';
+import Combining_MarkSymbols from '@unicode/unicode-3.0.0/Line_Break/Combining_Mark/symbols.mjs';
+import Combining_MarkRegex from '@unicode/unicode-3.0.0/Line_Break/Combining_Mark/regex.mjs';
+
+import Complex_ContextCodePoints from '@unicode/unicode-3.0.0/Line_Break/Complex_Context/code-points.mjs';
+import Complex_ContextSymbols from '@unicode/unicode-3.0.0/Line_Break/Complex_Context/symbols.mjs';
+import Complex_ContextRegex from '@unicode/unicode-3.0.0/Line_Break/Complex_Context/regex.mjs';
+
+import Contingent_BreakCodePoints from '@unicode/unicode-3.0.0/Line_Break/Contingent_Break/code-points.mjs';
+import Contingent_BreakSymbols from '@unicode/unicode-3.0.0/Line_Break/Contingent_Break/symbols.mjs';
+import Contingent_BreakRegex from '@unicode/unicode-3.0.0/Line_Break/Contingent_Break/regex.mjs';
+
+import ExclamationCodePoints from '@unicode/unicode-3.0.0/Line_Break/Exclamation/code-points.mjs';
+import ExclamationSymbols from '@unicode/unicode-3.0.0/Line_Break/Exclamation/symbols.mjs';
+import ExclamationRegex from '@unicode/unicode-3.0.0/Line_Break/Exclamation/regex.mjs';
+
+import GlueCodePoints from '@unicode/unicode-3.0.0/Line_Break/Glue/code-points.mjs';
+import GlueSymbols from '@unicode/unicode-3.0.0/Line_Break/Glue/symbols.mjs';
+import GlueRegex from '@unicode/unicode-3.0.0/Line_Break/Glue/regex.mjs';
+
+import HyphenCodePoints from '@unicode/unicode-3.0.0/Line_Break/Hyphen/code-points.mjs';
+import HyphenSymbols from '@unicode/unicode-3.0.0/Line_Break/Hyphen/symbols.mjs';
+import HyphenRegex from '@unicode/unicode-3.0.0/Line_Break/Hyphen/regex.mjs';
+
+import IdeographicCodePoints from '@unicode/unicode-3.0.0/Line_Break/Ideographic/code-points.mjs';
+import IdeographicSymbols from '@unicode/unicode-3.0.0/Line_Break/Ideographic/symbols.mjs';
+import IdeographicRegex from '@unicode/unicode-3.0.0/Line_Break/Ideographic/regex.mjs';
+
+import Infix_NumericCodePoints from '@unicode/unicode-3.0.0/Line_Break/Infix_Numeric/code-points.mjs';
+import Infix_NumericSymbols from '@unicode/unicode-3.0.0/Line_Break/Infix_Numeric/symbols.mjs';
+import Infix_NumericRegex from '@unicode/unicode-3.0.0/Line_Break/Infix_Numeric/regex.mjs';
+
+import InseparableCodePoints from '@unicode/unicode-3.0.0/Line_Break/Inseparable/code-points.mjs';
+import InseparableSymbols from '@unicode/unicode-3.0.0/Line_Break/Inseparable/symbols.mjs';
+import InseparableRegex from '@unicode/unicode-3.0.0/Line_Break/Inseparable/regex.mjs';
+
+import Line_FeedCodePoints from '@unicode/unicode-3.0.0/Line_Break/Line_Feed/code-points.mjs';
+import Line_FeedSymbols from '@unicode/unicode-3.0.0/Line_Break/Line_Feed/symbols.mjs';
+import Line_FeedRegex from '@unicode/unicode-3.0.0/Line_Break/Line_Feed/regex.mjs';
+
+import Mandatory_BreakCodePoints from '@unicode/unicode-3.0.0/Line_Break/Mandatory_Break/code-points.mjs';
+import Mandatory_BreakSymbols from '@unicode/unicode-3.0.0/Line_Break/Mandatory_Break/symbols.mjs';
+import Mandatory_BreakRegex from '@unicode/unicode-3.0.0/Line_Break/Mandatory_Break/regex.mjs';
+
+import NonstarterCodePoints from '@unicode/unicode-3.0.0/Line_Break/Nonstarter/code-points.mjs';
+import NonstarterSymbols from '@unicode/unicode-3.0.0/Line_Break/Nonstarter/symbols.mjs';
+import NonstarterRegex from '@unicode/unicode-3.0.0/Line_Break/Nonstarter/regex.mjs';
+
+import NumericCodePoints from '@unicode/unicode-3.0.0/Line_Break/Numeric/code-points.mjs';
+import NumericSymbols from '@unicode/unicode-3.0.0/Line_Break/Numeric/symbols.mjs';
+import NumericRegex from '@unicode/unicode-3.0.0/Line_Break/Numeric/regex.mjs';
+
+import Open_PunctuationCodePoints from '@unicode/unicode-3.0.0/Line_Break/Open_Punctuation/code-points.mjs';
+import Open_PunctuationSymbols from '@unicode/unicode-3.0.0/Line_Break/Open_Punctuation/symbols.mjs';
+import Open_PunctuationRegex from '@unicode/unicode-3.0.0/Line_Break/Open_Punctuation/regex.mjs';
+
+import Postfix_NumericCodePoints from '@unicode/unicode-3.0.0/Line_Break/Postfix_Numeric/code-points.mjs';
+import Postfix_NumericSymbols from '@unicode/unicode-3.0.0/Line_Break/Postfix_Numeric/symbols.mjs';
+import Postfix_NumericRegex from '@unicode/unicode-3.0.0/Line_Break/Postfix_Numeric/regex.mjs';
+
+import Prefix_NumericCodePoints from '@unicode/unicode-3.0.0/Line_Break/Prefix_Numeric/code-points.mjs';
+import Prefix_NumericSymbols from '@unicode/unicode-3.0.0/Line_Break/Prefix_Numeric/symbols.mjs';
+import Prefix_NumericRegex from '@unicode/unicode-3.0.0/Line_Break/Prefix_Numeric/regex.mjs';
+
+import QuotationCodePoints from '@unicode/unicode-3.0.0/Line_Break/Quotation/code-points.mjs';
+import QuotationSymbols from '@unicode/unicode-3.0.0/Line_Break/Quotation/symbols.mjs';
+import QuotationRegex from '@unicode/unicode-3.0.0/Line_Break/Quotation/regex.mjs';
+
+import SpaceCodePoints from '@unicode/unicode-3.0.0/Line_Break/Space/code-points.mjs';
+import SpaceSymbols from '@unicode/unicode-3.0.0/Line_Break/Space/symbols.mjs';
+import SpaceRegex from '@unicode/unicode-3.0.0/Line_Break/Space/regex.mjs';
+
+import SurrogateCodePoints from '@unicode/unicode-3.0.0/Line_Break/Surrogate/code-points.mjs';
+import SurrogateSymbols from '@unicode/unicode-3.0.0/Line_Break/Surrogate/symbols.mjs';
+import SurrogateRegex from '@unicode/unicode-3.0.0/Line_Break/Surrogate/regex.mjs';
+
+import UnknownCodePoints from '@unicode/unicode-3.0.0/Line_Break/Unknown/code-points.mjs';
+import UnknownSymbols from '@unicode/unicode-3.0.0/Line_Break/Unknown/symbols.mjs';
+import UnknownRegex from '@unicode/unicode-3.0.0/Line_Break/Unknown/regex.mjs';
+
+import ZWSpaceCodePoints from '@unicode/unicode-3.0.0/Line_Break/ZWSpace/code-points.mjs';
+import ZWSpaceSymbols from '@unicode/unicode-3.0.0/Line_Break/ZWSpace/symbols.mjs';
+import ZWSpaceRegex from '@unicode/unicode-3.0.0/Line_Break/ZWSpace/regex.mjs';
+
+// `Joining_Type`:
+
+import Dual_JoiningCodePoints from '@unicode/unicode-3.0.0/Joining_Type/Dual_Joining/code-points.mjs';
+import Dual_JoiningSymbols from '@unicode/unicode-3.0.0/Joining_Type/Dual_Joining/symbols.mjs';
+import Dual_JoiningRegex from '@unicode/unicode-3.0.0/Joining_Type/Dual_Joining/regex.mjs';
+
+import Join_CausingCodePoints from '@unicode/unicode-3.0.0/Joining_Type/Join_Causing/code-points.mjs';
+import Join_CausingSymbols from '@unicode/unicode-3.0.0/Joining_Type/Join_Causing/symbols.mjs';
+import Join_CausingRegex from '@unicode/unicode-3.0.0/Joining_Type/Join_Causing/regex.mjs';
+
+import Non_JoiningCodePoints from '@unicode/unicode-3.0.0/Joining_Type/Non_Joining/code-points.mjs';
+import Non_JoiningSymbols from '@unicode/unicode-3.0.0/Joining_Type/Non_Joining/symbols.mjs';
+import Non_JoiningRegex from '@unicode/unicode-3.0.0/Joining_Type/Non_Joining/regex.mjs';
+
+import Right_JoiningCodePoints from '@unicode/unicode-3.0.0/Joining_Type/Right_Joining/code-points.mjs';
+import Right_JoiningSymbols from '@unicode/unicode-3.0.0/Joining_Type/Right_Joining/symbols.mjs';
+import Right_JoiningRegex from '@unicode/unicode-3.0.0/Joining_Type/Right_Joining/regex.mjs';
+
+import TransparentCodePoints from '@unicode/unicode-3.0.0/Joining_Type/Transparent/code-points.mjs';
+import TransparentSymbols from '@unicode/unicode-3.0.0/Joining_Type/Transparent/symbols.mjs';
+import TransparentRegex from '@unicode/unicode-3.0.0/Joining_Type/Transparent/regex.mjs';
 
 // `Simple_Case_Mapping`:
 
