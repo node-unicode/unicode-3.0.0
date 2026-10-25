@@ -1,3 +1,4 @@
-import { gunzipSync } from 'node:zlib';
+import { brotliDecompressSync } from 'node:zlib';
+import decodeMapping from '../../decode-mapping.mjs';
 
-export default new Map(JSON.parse(gunzipSync(Buffer.from('H4sIAAAAAAAAE2WUW67GIAiEN+QDI8plLc2//22cSFFpzovJfAoD1Po8vXN7jBswf7/2yOhT2qPUQH0DTXBOWALbwHdIOSVU4D4pSDfZoFeAgdkeMHPDAOUZDTasgX0nUjnMsJleppvZYvMb6/ecL8Y9GqCG19PR2+MdTVWaSpzxMdrjzJUNX7MaTS3C1Hj13JtBU692xwpJvbrVpmqp1/C96NEemU3f2RtB0vPtxwh2QFOxF3aq0BP2C41HQEQ4+IJl6PALhtTOLaH+G4dh0gtP6MQ9daD0OrXMJ/xvlAZZpXQ/vUKy+ZtLb9iBFga3R1p5jDQnKDMUp5JQ+6SGmqkslKTyUDl2pVhz3opYc9Daq59y9dNR/XRWP5Xqp/rxs4+fVz+LWiz3LGqxvRe1OKWKWhypohbPOi1q8azTohbPOi1q8azT7OPn1c+p+jmqn/fq51z9fFQ/n9Vv/VMG2nsaau9ZqJyZe6i8LkSx5hUjxJp3i3rcfkrFoZBqFD/QLH4gKX4g/fjZx8+rH6j6AdUP4dDTr4+q4r3AyLhBVcUtQH4HxFc5Cm+W3oyzung5qACOZGyFrD+H5gX65pRL1l1zoKT184CURPM8IiWUz3/5wt8fs14Kxm0GAAA=', 'base64'))));
+export default decodeMapping(brotliDecompressSync(Buffer.from('HysCCIyUqONbVuqsbEP6zJfyGgIIe5JDdNEyeFN3Pj0bbeRjjKL3bEC5Zo2jMPMUcicqejHrc+MEP6ItHDpA4TBQ2nZZJjHPOsLd0CYCRVMHekcApMfC/v4PcbJG8xij82tHD7oD4cima7H9dspu4dDc4H76dDefbjPsejZow4E3jecSz9pnGGlah/42n1EX4ePP4AICeBLfJZSr3/fT+0sf0N3AuygsMKmPacIdcoBPuHcWyorsjkcod3Idh8qvZwsEqhsJOiNPD4orM8NQgzctnZgGoBL7TXRD4GKE3wi9YWYPlYlruHvQxk6wf/4t5aDbHdysmCXpoa3uGkG5kWBrla9sWSlRMr2WXEV6NKGyJrvkeDTxINeEWTaukQA=', 'base64')).toString());
